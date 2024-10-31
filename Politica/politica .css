@@ -1,0 +1,277 @@
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Header*/
+#header {
+    background-color: rgba(255, 255, 255, 0.85); /* Branco com 85% de opacidade */
+    position: fixed;
+    width: 100%;
+    z-index: 999; /* Certifica que o header está acima de outros elementos */
+}
+
+
+#header .navbar-nav .nav-link:hover {
+    color: black; /* Cor preta ao passar o mouse */
+}
+
+/* Ajustes gerais */
+body {
+    padding-top: 100px; /* Altura da navbar */
+}
+
+.nav-item:hover .nav-link {
+    color: black; /* Ajuste correto para hover no item */
+}
+
+.logo {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 10%;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    padding-left: 20%;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.85); /* Cor branca com 90% de opacidade */
+    /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  Sombra leve */
+}
+
+.navbar-brand, .nav-link {
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.nav-item {
+    margin: 3px 20px;
+    padding: 0;
+}
+.header-text{
+    color:black
+}
+/* Estilos responsivos */
+@media (min-width: 2000px) {
+    .logo {
+        padding-left: 15%;
+    }
+
+    .navbar-nav {
+        padding-left: 23%;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .nav-item {
+        margin: 1px 0;
+    }
+    .logo {
+        padding-top: 2%;
+        padding-bottom: 1.5%;
+        padding-left: 2%;
+    }
+    .navbar-nav {
+        text-align: center;
+        padding-left: 0;
+    }
+    .navbar-brand img {
+        height: 50px;
+    }
+    .navbar-brand, .nav-link, .dropdown-item {
+        font-size: 1rem;
+    }
+    /* Estilo para o menu colapsado */
+    .navbar-collapse {
+        background-color: white; /* Cor de fundo branca */
+        padding: 10px 0; /* Espaçamento superior e inferior */
+        border-radius: 10px; /* Arredondar os cantos */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+    }
+
+    /* Estilo para os links do menu */
+    .navbar-collapse .nav-link {
+        color: black; /* Cor do texto preta */
+        padding: 10px 20px; /* Aumenta o espaçamento interno */
+        border-bottom: 1px solid #eaeaea; /* Divisória entre os itens */
+        font-size: 130%;
+    }
+
+    /* Remove a divisória do último item */
+    .navbar-collapse .nav-link:last-child {
+        border-bottom: none; /* Remove a divisória do último item */
+    }
+
+    /* Cor do texto ao passar o mouse */
+    .navbar-collapse .nav-link:hover {
+        background-color: #f8f9fa; /* Cor de fundo ao passar o mouse (opcional) */
+        color: #007bff; /* Cor do texto ao passar o mouse (opcional) */
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Main*/
+
+main {
+    margin-top: 100px; /* Desce o main 100px */
+    margin: 40px auto; /* Margem lateral automática para centralizar */
+    padding: 20px; /* Espaçamento interno */
+    /* Removido o background-color */
+    border-radius: 8px; /* Bordas arredondadas, pode remover se não quiser bordas */
+    box-shadow: none; /* Removido a sombra */
+}
+
+.privacy-policy {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000; /* Cor do título em preto */
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #000; /* Cor dos subtítulos em preto */
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000; /* Cor dos subtítulos de nível 3 em preto */
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #000; /* Texto em preto */
+}
+
+ul {
+    margin: 10px 0 20px 20px;
+    padding: 0;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #000; /* Texto em preto */
+}
+
+a {
+    color: #007BFF; /* Cor dos links */
+    text-decoration: none;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Footer*/
+
+
+#footer {
+    background-image: url('../Fotos/Imagem-footer2.svg');
+    background-size: cover;
+    padding-bottom: 0;
+    color: white;
+    display: flex;
+    padding:0;
+    margin:0;
+    height: 100%
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui logo e logos nas extremidades */
+    align-items: center;
+    width: 100%;
+}
+
+.logotipo-footer {
+    padding-left: 6%;
+    margin-bottom: 0; /* Ajusta a margem inferior para remover espaços */
+    position: relative; /* Permite usar top e bottom */
+    top: 15px; /* Ajusta a posição para cima */
+    /* Para subir ainda mais, aumente o valor negativo */
+}
+
+.logos {
+    padding: 0;
+    margin-top: 8%; /* Remove o espaço em branco adicional acima das logos */
+}
+
+.logo-rs {
+    padding-left: 5%;
+}
+
+.whatsapp {
+    padding-right: 15%;
+}
+
+.logos img {
+    height: 70px;
+    width: auto;
+}
+
+/* Centraliza e alinha verticalmente a política de privacidade */
+.privacy-policy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7%;
+    padding-right: 6%;
+    font-size: 150%;
+}
+
+.privacy-policy {
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.privacy-policy:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center;     /* Centraliza todos os elementos */
+    }
+
+    .logotipo-footer, .privacy-policy-container, .logos {
+        margin-bottom: 15px; /* Adiciona espaçamento entre os elementos */
+    }
+
+    .logotipo-footer {
+        text-align: center; /* Centraliza o logotipo */
+    }
+
+    .privacy-policy-container {
+        padding:0;
+        text-align: center; /* Centraliza a política de privacidade */
+    }
+
+    .logos {
+        justify-content: center; /* Centraliza as logos das redes sociais */
+    }
+
+    .logo-rs {
+        padding-left: 0; /* Remove padding lateral para centralizar melhor */
+    }
+
+    .whatsapp {
+        padding-right: 0; /* Remove padding lateral para centralizar melhor */
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
